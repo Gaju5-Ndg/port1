@@ -1,0 +1,469 @@
+root {
+	 --clr-primary-200: #F3EED9;
+	 --clr-primary-400: #824936;
+
+	 --clr-neutral-100: #fff;
+	 --clr-neutral-900: #222C2A;
+
+	 --ff-primary: 'Roboto', sans-serif;
+	 --ff-accent: 'Playfair Display', serif;
+} 
+ 
+ 
+ 
+ *,
+		*::before,
+		*::after{
+			box-sizing: border-box;
+		}
+
+		*:focus{
+			outline: none;
+		}
+
+		body{
+			font-family: var(--ff-primary);
+			font-weight: 400;
+			font-size: 1.3125rem;
+			line-height: 1;
+			padding: 0;
+			margin: 0;
+			background: #000;
+			color: white;
+			/*font-family: "Oxygen", sans-serif;*/
+		}
+		html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+		a{
+			text-decoration: none;
+		}
+
+	
+
+		aside{
+			position: fixed;
+			background: #222;
+			top: 0px;
+			left: 0px;
+			width: 150px;
+			height: 100%;
+			overflow: none;
+			z-index: 1;
+			text-align: center;
+		}
+       
+		
+		.material-icons.md-36{
+			font-size:36px;
+			color: rgb(33, 56, 33);
+		}
+		
+
+		aside a{
+			display: block;
+			padding: 15px 0;
+			color: white;
+			transition: all, 0.35s;
+			text-transform: uppercase;
+			font-size: 0.75em;
+			letter-spacing: 2px;
+		}
+
+
+
+		aside p{
+			margin:0;
+			padding: 0;
+		}
+		aside a:hover{
+			background: rgb(40, 70, 40);
+		}
+		aside a .material-icons.md-36:hover{
+			color: white;
+		}
+
+		aside nav a:nth-child(2){
+
+			background: #000;
+		}
+
+		main{
+			
+			max-width: 980px;
+			background: #000;
+			margin-left: 20%;
+			padding: 12px 50px 12px 50px;
+		}
+
+		header{
+			text-align: center;
+			letter-spacing: 2px;
+		}
+
+		header h1{
+			font-weight: bold;
+			font-size: 4em;
+			letter-spacing: 4px;
+		}
+
+		header h5{
+			font-weight: 300;
+			font-size: 1em;
+			letter-spacing: 4px;
+			color: #b2b2b2;
+		}
+
+		.about,
+		.folio,
+		.contact{
+			margin-inline: auto;
+			width: min(90%, 70.5rem);
+			line-height: 1.5em;
+			font-size: 1em;
+			letter-spacing: 4px;
+			font-weight: 300;
+			margin-left: 15%;
+			margin-right: 10px;
+		}
+
+		.about h2,
+		.folio h2,
+		.contact h2{
+			font-weight: 300;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding-bottom: 10px;
+			margin: 100px 0 0 0;
+			letter-spacing: 4px;
+		}
+
+		.about p{
+			color: #b2b2b2;
+		}
+
+		.about span{
+			font-weight: 600;
+			color: rgb(57, 66, 57);
+		}
+
+
+		.about h3{
+			font-weight: 300;
+			margin: 50px 0;
+		}
+
+		.container{
+			width: 100%;
+			background-color: #b2b2b2;
+		}
+
+
+		.skills{
+			text-align: right;
+			padding-right: 20px;
+			line-height: 20px;
+			color: white;
+			background-color: rgb(55, 66, 55);
+		}
+
+		.skills h3{
+			color: rgb(42, 51, 42);
+		}
+
+		.node {
+			margin-right: 20%;
+			width: 65%;
+		}
+
+		.html1{
+			width: 50%;
+		}
+
+		.css1{
+			width: 50%;
+		}
+		.login{
+			display: flex;
+			text-align: right;
+			align-items: center;
+			justify-content: center;
+			margin-top: 3rem;
+		  
+		}
+		
+		.form-container{
+			border: 3px solid;
+			background: #484848;
+			color: white;
+			width: 50%;
+			text-align: center;
+			height: 400px; 
+		  
+			padding: 1rem;
+			border-radius: 10px;
+		}
+		
+		.form-container h2{
+			text-align: center;
+			margin: 2rem 0;
+		}
+		
+		.form-container .form_control{
+			margin-bottom: 2rem;
+		}
+		.form-container .form_control label{
+			font-size: 20px;
+		}
+		.form-container .form_control input{
+			outline: none;
+			padding: 10px;
+			width: 65%;
+			border: none;
+			border-radius: 10px;
+		}
+		
+
+		.folio h3{
+			color: white;
+			font-weight: 300;
+			letter-spacing: 2px;
+		}
+        .img {
+			display: block;
+			max-width: 100%;
+		}
+
+		.folio p{
+			font-size: 0.875em;
+
+		}
+
+		.row-halves{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			justify-content: space-between;
+			margin: 20px 0;
+			-webkit-flex-pack:justify;
+
+		}
+
+
+		.row-halves .col{
+			width: 49%;
+
+		}
+
+
+		.col{
+			border: 1px solid #222;
+			background: #222;
+			color: #b2b2b2;
+			padding: 10px;
+		}
+
+
+		.label{
+			color: rgb(41, 90, 41);
+		}
+
+		form input[type="text"],
+		select,
+		textarea{
+			width: 100%;
+			padding: 12px;
+			border: none;
+			border: 1px solid #222;
+			background: transparent;
+			margin-top: 6px;
+			margin-bottom:16px;
+			resize: vertical;
+			color: #b2b2b2; 
+		}
+
+
+		form input[type ="text"]:focus,
+		textarea:focus{
+			outline: none;
+			border: 1px solid green;
+		}
+
+		input[type="submit"]{
+			background-color: transparent;
+			color: #b2b2b2;
+			text-transform: uppercase;
+			padding: 12px 20px;
+			border: 1px solid #222;
+			cursor: pointer;
+			transition: all 0.35s;
+		}
+
+		input[type = "submit"]{
+			background-color: transparent;
+			color: #b2b2b2;
+			text-transform: uppercase;
+			padding: 12px;
+			border: 1px solid #222;
+			cursor: pointer;
+			transition: all 0.35s;
+		}
+
+		input[type="submit"]:hover{
+			background-color: rgb(31, 83, 31);
+			color: #222;
+		}
+
+		.contact .container{
+			margin-top: 20px;
+			margin-bottom: 100px;
+			background: transparent;
+			padding: 20px 0;
+		}
+			
+		
+		.login .container{
+			margin-top: 20px;
+			margin-bottom: 100px;
+			background: transparent;
+			padding: 20px 0;
+		}
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 6px 10px;
+			margin: 4px 0;
+			dislay:inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		  }
+		  
+		  /* Set a style for all buttons */
+		  button {
+			background-color: #033624;
+			color: white;
+			padding: 7px 10px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		  }
+		  
+		  /* Add a hover effect for buttons */
+		  button:hover {
+			opacity: 0.8;
+		  }
+		  
+		 
+		  
+		
+		  
+		  /* Add padding to containers */
+		  .container {
+			padding: 16px;
+		  }
+
+		.footer{
+			border-top: 1px solid #222;
+		}
+
+		.top-bar{
+			padding: 20px 0;
+			text-align: center;
+		}
+
+		.top-bar a{
+			margin: 10px;
+			font-size: 2em;
+			color: #b2b2b2;
+			transition: all 0.35s;
+			display: inline-block;
+		}
+
+		.top-bar a:hover{
+			transform: scale(1.1);
+			color: #009688;
+		}
+
+		.bottom-bar{
+			background: #000;
+			font-size: 0.75em;
+			text-align: center;
+		}
+
+		@media (max-width: 768px){
+			.row-halves{
+				display: block;
+			}
+
+			.row-halves .col{
+				width: 100%;
+				margin: 0 0 10px 0;
+
+			}
+		}
+		@media (max-width: 601px){
+			.aside{
+				display: none;
+			}
+
+			.main{
+				width: 100%;
+				margin: 0 auto;
+				padding: 12px 25px;
+				
+			}
+
+
+			header{
+				margin-top: 80px;
+			}
+
+			header h1{
+				font-size: 3em;
+				line-height: 1.4em;
+			}
+			header h5{
+				font-size: 1em;
+				letter-spacing: 2px;
+			}
+
+			.mobile-nav{
+				position: fixed;
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				background: rgba(0,0,0,0.8);
+				z-index: 1;
+			}
+
+			.mobile-nav a{
+				width: 100%;
+				color: #b2b2b2;
+				text-transform: uppercase;
+				font-size: 0.875em;
+				letter-spacing: 2px;
+				text-align: center;
+				padding: 10px 10px;
+				transition: all 0.35s;
+			}
+
+			
+
+			@media (max-width: 600px){
+				aside{
+					display: none;
+				}
+				
+			}
+
+			@media (min-width: 700px){
+				
+			}
+}
